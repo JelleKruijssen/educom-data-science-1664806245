@@ -8,10 +8,10 @@
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="2" value="Leverancier" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-                    <mxGeometry x="223" y="282" width="140" height="160" as="geometry"/>
+                    <mxGeometry x="223" y="310" width="140" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="3" value="ID&#10;Naam&#10;Email&#10;Mobiel nummber&#10;Vast nummer&#10;Adres_id&#10;eigenschappen_id&#10;Leverancierrubriek_id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="2" vertex="1">
-                    <mxGeometry y="30" width="140" height="130" as="geometry"/>
+                <mxCell id="3" value="ID&#10;Naam&#10;Email&#10;Mobiel nummber&#10;Vast nummer" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="2" vertex="1">
+                    <mxGeometry y="30" width="140" height="90" as="geometry"/>
                 </mxCell>
                 <mxCell id="6" value="Rubriek" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
                     <mxGeometry x="42" y="75" width="140" height="70" as="geometry"/>
@@ -19,29 +19,26 @@
                 <mxCell id="7" value="Rubriek_id&#10;Naam" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="6" vertex="1">
                     <mxGeometry y="30" width="140" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="104" value="" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="10" target="14" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
                 <mxCell id="10" value="adres" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-                    <mxGeometry x="422" y="110" width="140" height="110" as="geometry"/>
+                    <mxGeometry x="422" y="120" width="140" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="11" value="adres_id&#10;straatnaam&#10;Nummer&#10;Postadres_id&#10;Gemeenten_id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="10" vertex="1">
-                    <mxGeometry y="30" width="140" height="80" as="geometry"/>
+                <mxCell id="11" value="id&#10;leverancier_id&#10;nummer&#10;postcode_id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="10" vertex="1">
+                    <mxGeometry y="30" width="140" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="14" value="Gemeente" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-                    <mxGeometry x="422" y="282" width="140" height="80" as="geometry"/>
+                    <mxGeometry x="422" y="369" width="140" height="80" as="geometry"/>
                 </mxCell>
                 <mxCell id="15" value="Gemeente_id&#10;Provincie_id&#10;Naam" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="14" vertex="1">
                     <mxGeometry y="30" width="140" height="50" as="geometry"/>
                 </mxCell>
                 <mxCell id="61" value="" style="edgeStyle=none;html=1;entryX=0.479;entryY=1.1;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="59" edge="1">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="575" y="477" as="sourcePoint"/>
-                        <mxPoint x="492.05999999999995" y="482" as="targetPoint"/>
+                        <mxPoint x="575" y="564" as="sourcePoint"/>
+                        <mxPoint x="492.05999999999995" y="569" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="18" value="Provincie" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-                    <mxGeometry x="422" y="402" width="140" height="80" as="geometry"/>
+                    <mxGeometry x="422" y="489" width="140" height="80" as="geometry"/>
                 </mxCell>
                 <mxCell id="19" value="Provincie_id&#10;Land_id&#10;Naam&#10;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="18" vertex="1">
                     <mxGeometry y="30" width="140" height="50" as="geometry"/>
@@ -54,20 +51,20 @@
                 </mxCell>
                 <mxCell id="32" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="18" target="15" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="592" y="410" as="sourcePoint"/>
-                        <mxPoint x="492" y="380" as="targetPoint"/>
+                        <mxPoint x="592" y="497" as="sourcePoint"/>
+                        <mxPoint x="492" y="467" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="33" value="Postbus" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-                    <mxGeometry x="649" y="282" width="140" height="110" as="geometry"/>
+                    <mxGeometry x="422" y="240" width="140" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="34" value="postbus_id&#10;geo-locatie&#10;Postbusnummer&#10;postcode&#10;plaats&#10;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="33" vertex="1">
-                    <mxGeometry y="30" width="140" height="80" as="geometry"/>
+                <mxCell id="34" value="id&#10;leverancier_id&#10;postbusnummer&#10;postcode_id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="33" vertex="1">
+                    <mxGeometry y="30" width="140" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="39" value="afdelingen" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
                     <mxGeometry x="42" y="710" width="140" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="40" value="Afdeling_id&#10;Naam&#10;Contactpersoon_id&#10;Taak_id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="39" vertex="1">
+                <mxCell id="40" value="Afdeling_id&#10;Naam" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="39" vertex="1">
                     <mxGeometry y="30" width="140" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="116" value="" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="7" target="53">
@@ -90,7 +87,7 @@
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="59" value="Land" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-                    <mxGeometry x="422" y="517" width="140" height="60" as="geometry"/>
+                    <mxGeometry x="422" y="604" width="140" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="60" value="Land_id&#10;Naam" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="59" vertex="1">
                     <mxGeometry y="30" width="140" height="30" as="geometry"/>
@@ -98,7 +95,7 @@
                 <mxCell id="65" value="Taken" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
                     <mxGeometry x="422" y="710" width="140" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="66" value="Taken_id&#10;Naam&#10;Afdeling_id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="65" vertex="1">
+                <mxCell id="66" value="Taken_id&#10;Naam" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="65" vertex="1">
                     <mxGeometry y="30" width="140" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="74" value="" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=0.98;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="71" target="72" edge="1">
@@ -135,19 +132,14 @@
                 <mxCell id="97" value="" style="edgeStyle=none;html=1;" parent="1" source="71" target="3" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="102" value="" style="edgeStyle=none;html=1;" parent="1" source="99" edge="1">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="719" y="280" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="99" value="Postadres" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-                    <mxGeometry x="649" y="110" width="140" height="110" as="geometry"/>
-                </mxCell>
-                <mxCell id="100" value="Postadres_id&#10;Postbus_id&#10;adres_id&#10;Straatnaam&#10;nummer" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="99" vertex="1">
-                    <mxGeometry y="30" width="140" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="103" value="" style="edgeStyle=none;html=1;" parent="1" source="100" target="11" edge="1">
+                <mxCell id="122" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="99" target="120">
                     <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="99" value="postcode" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+                    <mxGeometry x="649" y="175" width="140" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="100" value="id&#10;postcode&#10;straatnaam_id&#10;geolocatie" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="99" vertex="1">
+                    <mxGeometry y="30" width="140" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="109" value="" style="edgeStyle=none;html=1;" parent="1" source="106" target="23" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
@@ -163,6 +155,64 @@
                 </mxCell>
                 <mxCell id="114" value="" style="edgeStyle=none;html=1;" parent="1" source="107" target="40" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="117" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;exitX=1;exitY=0.822;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3" target="34">
+                    <mxGeometry width="100" height="100" relative="1" as="geometry">
+                        <mxPoint x="380" y="420" as="sourcePoint"/>
+                        <mxPoint x="480" y="320" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="118" value="" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="100" target="11">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="610" y="150" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="119" value="" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="100" target="34">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="650" y="350" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="120" value="straatnaam" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                    <mxGeometry x="649" y="320" width="140" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="121" value="id&#10;straatnaam&#10;woonplaats_id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="120">
+                    <mxGeometry y="30" width="140" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="139" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="123" target="121">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="123" value="woonplaats" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                    <mxGeometry x="649" y="442" width="140" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="124" value="id&#10;woonplaats&#10;gemeente_id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="123">
+                    <mxGeometry y="30" width="140" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="138" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="127" target="124">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="127" value="gemeente" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                    <mxGeometry x="649" y="562" width="140" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="128" value="id&#10;gemeente&#10;provincie_id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="127">
+                    <mxGeometry y="30" width="140" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="137" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="130" target="128">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="130" value="provincie" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                    <mxGeometry x="649" y="680" width="140" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="131" value="id&#10;provincie&#10;land_id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="130">
+                    <mxGeometry y="30" width="140" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="136" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="133" target="131">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="133" value="land" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                    <mxGeometry x="649" y="800" width="140" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="134" value="id&#10;land" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="133">
+                    <mxGeometry y="30" width="140" height="50" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
