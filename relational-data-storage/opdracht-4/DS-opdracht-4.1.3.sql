@@ -1,0 +1,1 @@
+SELECT a.name, straat, huisnr, postcode, d.name FROM mhl_suppliers AS a INNER JOIN mhl_cities AS b ON a.city_ID=b.id INNER JOIN mhl_suppliers_mhl_rubriek_view AS c ON a.id=c.mhl_suppliers_ID INNER JOIN mhl_rubrieken AS d ON c.mhl_rubriek_view_ID=d.id WHERE b.name = 'amsterdam' AND (d.id = 235 OR d.parent = 235) ORDER BY d.name, a.name

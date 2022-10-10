@@ -1,0 +1,1 @@
+SELECT a.name, straat, huisnr, postcode FROM mhl_suppliers AS a INNER JOIN mhl_cities AS b ON a.city_ID=b.id INNER JOIN mhl_communes AS c ON b.commune_ID=c.id WHERE c.name = 'steenwijkerland'
