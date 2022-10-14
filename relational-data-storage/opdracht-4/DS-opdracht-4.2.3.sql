@@ -1,3 +1,10 @@
-SELECT s.id, IFNULL(h.name, s.name), s.name FROM mhl_rubrieken AS s
-LEFT JOIN mhl_rubrieken AS h
-ON s.parent=h.id
+SELECT 
+	rc.id, 
+	IFNULL(rp.name,rc.name) AS hoofdrubriek,
+    IF(ISNULL(rp.name), '',rc.name) AS subrubriek
+FROM mhl_rubrieken AS rp
+RIGHT OUTER JOIN mhl_rubrieken AS rc
+ON rc.parent=rp.id
+ORDER BY 
+	hoofdrubriek,
+	subrubriek
