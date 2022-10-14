@@ -1,16 +1,12 @@
-SELECT 
-	s.name AS bedrijf,
-    pt.name AS prop,
-    CASE 
-		WHEN pt.is_filter = 'N' THEN 'NOT YET'
-        ELSE 'Y'
-	END AS value
-FROM mhl_propertytypes AS pt
-INNER JOIN mhl_yn_properties AS yp
-ON pt.id=yp.propertytype_ID
-RIGHT JOIN mhl_suppliers AS s
-ON yp.supplier_ID=s.id
-
+SELECT
+	mhl_suppliers.name,
+    mhl_propertytypes.name,
+    IFNULL(mhl_yn_properties.content, "NOT SET") as value
+FROM mhl_suppliers
+CROSS JOIN mhl_propertytypes
+LEFT JOIN mhl_yn_properties ON mhl_suppliers.id=mhl_yn_properties.supplier_ID AND mhl_propertytypes.id=mhl_yn_properties.propertytype_ID
+JOIN mhl_cities ON mhl_suppliers.city_ID=mhl_cities.id
+WHERE mhl_cities.name='amsterdam' AND mhl_propertytypes.proptype = 'A'
 
 
 
